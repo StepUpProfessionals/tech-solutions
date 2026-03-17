@@ -654,8 +654,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding-top: 24px;
+  #hero {
+    min-height: auto;
+    height: auto;
+    align-items: flex-start;
+    padding: 24px 0 40px;
   }
 
   .hero-inner {
