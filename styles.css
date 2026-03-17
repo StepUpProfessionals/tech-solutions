@@ -128,11 +128,11 @@ nav {
 
 /* ─── HERO ───────────────────────────────────────────────── */
 #hero {
-  min-height: 100svh;
+  min-height: auto;
   background: var(--navy);
   display: flex;
   align-items: center;
-  padding: 100px 0 80px;
+  padding: 120px 0 100px;
   position: relative;
   overflow: hidden;
 }
@@ -617,11 +617,6 @@ footer {
 
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 860px) {
-  #hero {
-    min-height: auto;
-    padding: 100px 0 60px;
-  }
-
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 48px;
