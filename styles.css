@@ -659,8 +659,7 @@ footer {
     height: auto !important;
     padding: 24px 0 40px !important;
     align-items: flex-start !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow: hidden !important;
   }
 
   .hero-inner {
@@ -699,21 +698,10 @@ footer {
 
   .mockup-frame {
     padding: 18px;
-    animation: none !important;
-    transform: none !important;
   }
 
   .mockup-screen {
     height: auto;
     min-height: 180px;
-    animation: none !important;
-    transform: none !important;
-  }
-
-  .hero-content,
-  .hero-title,
-  .hero-sub {
-    animation: none !important;
-    transform: none !important;
   }
 }
