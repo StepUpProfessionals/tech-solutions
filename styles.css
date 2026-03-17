@@ -657,9 +657,9 @@ footer {
   #hero {
     min-height: auto !important;
     height: auto !important;
-    padding: 24px 0 40px !important;
+    padding: 80px 0 48px !important;
     align-items: flex-start !important;
-    overflow: hidden !important;
+    overflow: clip !important;
   }
 
   .hero-inner {
