@@ -207,6 +207,8 @@ nav {
   transition: background .2s, transform .2s, box-shadow .2s;
 }
 
+
+
 .btn-wa:hover {
   background: #1FB558;
   transform: translateY(-2px);
@@ -319,6 +321,10 @@ nav {
   font-size: .72rem;
   color: rgba(255,255,255,.38);
 }
+
+
+
+
 
 /* ─── INCLUDES ───────────────────────────────────────────── */
 #incluye {
@@ -632,4 +638,48 @@ footer {
 @media (max-width: 540px) {
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .nav-brand span { display: none; }
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    line-height: 1.15;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    line-height: 1.55;
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .btn-wa {
+    margin: 0;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .mockup-frame {
+    padding: 18px;
+  }
+
+  .mockup-screen {
+    height: auto;
+    min-height: 180px;
+  }
 }
