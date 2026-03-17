@@ -654,9 +654,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 24px;
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 28px;
+    align-items: start;
   }
 
   .hero-content {
