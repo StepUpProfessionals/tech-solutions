@@ -655,16 +655,18 @@ footer {
 
 @media (max-width: 768px) {
   #hero {
-    min-height: auto;
-    height: auto;
-    align-items: flex-start;
-    padding: 24px 0 40px;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 24px 0 40px !important;
+    align-items: flex-start !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
   }
 
   .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    align-items: start;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    align-items: start !important;
   }
 
   .hero-content {
@@ -697,10 +699,21 @@ footer {
 
   .mockup-frame {
     padding: 18px;
+    animation: none !important;
+    transform: none !important;
   }
 
   .mockup-screen {
     height: auto;
     min-height: 180px;
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .hero-content,
+  .hero-title,
+  .hero-sub {
+    animation: none !important;
+    transform: none !important;
   }
 }
