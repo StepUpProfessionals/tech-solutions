@@ -128,11 +128,11 @@ nav {
 
 /* ─── HERO ───────────────────────────────────────────────── */
 #hero {
-  min-height: auto;
+  min-height: 100svh;
   background: var(--navy);
   display: flex;
   align-items: center;
-  padding: 120px 0 100px;
+  padding: 100px 0 80px;
   position: relative;
   overflow: hidden;
 }
@@ -703,5 +703,27 @@ footer {
   .mockup-screen {
     height: auto;
     min-height: 180px;
+  }
+}
+/* ─── DESKTOP IFRAME FIX ─────────────────────────────────── */
+/* Disables hero entrance animations on desktop to prevent    */
+/* layout shift / empty space when embedded in Elementor.     */
+@media (min-width: 861px) {
+  .hero-content > * {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .hero-content > *:nth-child(1),
+  .hero-content > *:nth-child(2),
+  .hero-content > *:nth-child(3),
+  .hero-content > *:nth-child(4),
+  .hero-content > *:nth-child(5) {
+    animation-delay: 0s;
+  }
+  .hero-visual {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }
